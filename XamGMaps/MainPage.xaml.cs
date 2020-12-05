@@ -17,7 +17,7 @@ namespace XamGMaps
         public MainPage()
         {
             InitializeComponent();
-            Pin pinTokyo = new Pin()
+            Pin pinUdla = new Pin()
             {
                 Type = PinType.Place,
                 Label = "Udla",
@@ -27,8 +27,8 @@ namespace XamGMaps
                 Tag = "id_udla",
 
             };
-            map.Pins.Add(pinTokyo);
-            map.MoveToRegion(MapSpan.FromCenterAndRadius(pinTokyo.Position, Distance.FromMeters(5000)));
+            map.Pins.Add(pinUdla);
+            map.MoveToRegion(MapSpan.FromCenterAndRadius(pinUdla.Position, Distance.FromMeters(5000)));
 
         }
     }
